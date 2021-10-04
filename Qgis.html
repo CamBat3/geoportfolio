@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+	body {
+		background-color: #ffffbf;
+		height: 100%;
+		width: 100%;
+		overflow-y: auto;
+		overflow: -moz-scrollbars-none;
+		-ms-overflow-style: none;
+	}
+	p.ref {
+		font-family: 'Raleway', sans-serif;
+		font-size: 90%;
+		color: black;
+		text-align: center;
+		padding-top: -20%;
+	}
+	div.cc {
+		color: white;
+	}
+	h2 {
+		font-family: 'Newsreader', serif;
+		font-size: 190%;
+		color: black;
+		text-align: center;
+	}
+	table {
+	}
+	table.t1 {
+		/* margin-top: -1.8%; */
+		width: 100%;
+	}
+	table.t2 {
+		/* margin-top: -1.5%; */
+		width: 100%;
+	}
+	td{
+		text-align:center;
+	}
+	iframe{
+	border: solid #000000 2px;
+	}
+	</style>
+	<title>Melbourne Bicycle Hotspots</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body id="body">
+	<header>
+    <nav id="navbar" class="navbar" role="navigation" data-mobile="false">
+      <button id="navbar-toggle" class="navbar-toggle" type="button"
+      aria-controls="navbar-menu"
+      aria-label="Toggle menu"
+      aria-expanded="false">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul id="nav-link-container" class="nav-link-container">
+      <li><a href="index.html" class="nav-link">Back Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+	<div id="home-left">
+		<div id="hacker-name" class="name-big-font">Bicycle accident Hotspots</div>
+	</div>
+	<div id="home-right">
+		<div id="qgis-right-bg"></div>
+	</div>
+</section>
+
+<div class="resume-article">
+	<div class="resume-article-right">
+		<div class="resume-title">Description</div>
+		<br>
+		<div class="resume-designation">The aim for this project was to use open-source
+			software to create a product from spatial data. Qgis an open-source spatial
+			tool was used for all the analysis, and all data was obtained from open-source
+			sites. The analysis was focused on bike accidents within Melbourne CBD during
+			Morning peak-hour and Evening peak-hour.</div>
+			<br>
+			<div class="resume-designation"> As you can see from the below maps, there is a
+				clear difference between where the hotspots occur during the morning and
+				evening. The maps were created using CARTO which allowed for each level of risk
+				to be easily identifiable. They were then put into a website format and hosted
+				online, unfortunately the website is no longer up.</div>
+				<br>
+			</div>
+		</div>
+
+<table class="t1">
+	<tr>
+		<td><iframe width="95%" height="490" frameborder="0" src="https://cambat58.carto.com/builder/fa7343db-e761-4de3-9695-dd70472cf1c9/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></td>
+
+		<td><iframe width="95%" height="490" frameborder="0" src="https://cambat58.carto.com/builder/e6bad19a-e160-4dab-826b-df3f41b1f6ca/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></td>
+	</tr>
+</table>
+<table class="t2">
+	<tr>
+		<td>
+			<p class="ref">A hotspot map of Bicycle Crashes in Melbourne CBD during Morning Peak-hour (7-9am)</p>
+		</td>
+
+		<td>
+			<p class="ref">A hotspot map of Bicycle Crashes in Melbourne CBD during Evening Peak-hour (4-7pm)</p>
+		</td>
+	</tr>
+</table>
+
+
+<!--              Footer               -->
+<footer id="footer">
+<div class="footer-container">
+	<div class="credits">
+		Designed by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Abhi,</a>
+		Edited by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Cameron</a>
+	</div>
+	<div class="copyright">
+		&copy; Copyright <strong><span style="color:white">MIT License</span></strong> All Rights Reserved
+	</div>
+</div>
+</footer>
+
+<!-- Main javascript file -->
+<script src="js/index.js"></script>
+
+</body>
+</html>

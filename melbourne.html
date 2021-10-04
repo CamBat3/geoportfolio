@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h3{
+      text-align: center;
+    }
+
+  * {box-sizing: border-box}
+  .mySlides1, .mySlides2 {display: none}
+  img {vertical-align: middle;}
+
+  .slideshow-container1 {
+    width: 50%;
+    height:350px;
+    position: relative;
+    margin: auto;
+    border: solid #000000 2px;
+  }
+  .slideshow-container2 {
+    width: 40%;
+    height:700px;
+    position: relative;
+    margin: auto;
+    border: solid #000000 2px;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: white;
+    opacity: 50%;
+  }
+  </style>
+
+  <title>Melbourne Hotspot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body id="body">
+  <header>
+    <nav id="navbar" class="navbar" role="navigation" data-mobile="false">
+      <button id="navbar-toggle" class="navbar-toggle" type="button"
+      aria-controls="navbar-menu"
+      aria-label="Toggle menu"
+      aria-expanded="false">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul id="nav-link-container" class="nav-link-container">
+      <li><a href="index.html" class="nav-link">Back Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <div id="home-left">
+    <div id="hacker-name" class="name-big-font">Road accident hotspots, City
+      vs Suburb</div>
+    </div>
+    <div id="home-right">
+      <div id="melb-right-bg"></div>
+    </div>
+  </section>
+
+  <div class="resume-article">
+    <div class="resume-article-right">
+      <div class="resume-title">Description</div>
+      <br>
+      <div class="resume-designation">This project’s main goal was to compare the
+      road accident hotspots of a main city with a suburb, to see the difference
+      between the hotspots and their patterns. The city was Melbourne CBD, and the
+      suburb was Dandenong and as you can see there are quite major differences
+      between the two locations. </div>
+      <br>
+      <div class="resume-designation"> Melbourne CBD has hotspots all over the
+      network which change depending on the time of day, Morning peak hour (7-9am)
+      and Evening peak hour (4-7pm). On the other hand Dandenong has a very strong
+      hotspot around the town centre that stays throughout the day only slightly
+      changing in intensities.</div>
+      <br>
+    </div>
+  </div>
+
+  <h3>Melbourne</h3>
+<div class="slideshow-container1">
+  <div class="mySlides1">
+    <img src="images/CityVSRural-images/AccumulatedMelb.png" style="width:100%; height:346px">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/CityVSRural-images/MorningMelb.png" style="width:100%; height:346px">
+  </div>
+
+  <div class="mySlides1">
+    <img src="images/CityVSRural-images/EveningMelb.png" style="width:100%; height:346px">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<br>
+<h3>Dandenong</h3>
+<div class="slideshow-container2">
+  <div class="mySlides2">
+    <img src="images/CityVSRural-images/AccumulatedDan.png" style="width:100%;height:696px">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/CityVSRural-images/MorningDan.png" style="width:100%;height:696px">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/CityVSRural-images/EveningDan.png" style="width:100%;height:696px">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<br>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+
+
+
+
+
+
+
+<!--              Footer               -->
+<footer id="footer">
+  <div class="footer-container">
+    <div class="credits">
+      Designed by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Abhi,</a>
+      Edited by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Cameron</a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span style="color:white">MIT License</span></strong> All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<!-- Main javascript file -->
+<script src="js/index.js"></script>
+
+</body>
+</html>

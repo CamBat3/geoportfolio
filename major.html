@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    table.t1 {
+      /* margin-top: -1.8%; */
+      width: 100%;
+    }
+    table.t2 {
+      /* margin-top: -1.5%; */
+      width: 100%;
+    }
+    td{
+      text-align:center;
+    }
+    video{
+      border: solid #000000 2px;
+    }
+  </style>
+
+  <title>Thesis Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="body">
+  <header>
+    <nav id="navbar" class="navbar" role="navigation" data-mobile="false">
+      <button id="navbar-toggle" class="navbar-toggle" type="button"
+      aria-controls="navbar-menu"
+      aria-label="Toggle menu"
+      aria-expanded="false">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul id="nav-link-container" class="nav-link-container">
+      <li><a href="index.html" class="nav-link">Back Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <div id="home-left">
+    <div id="hacker-name" class="name-big-font">Final year Thesis project</div>
+  </div>
+  <div id="home-right">
+    <div id="major-right-bg"></div>
+  </div>
+</section>
+
+<div class="resume-article">
+  <div class="resume-article-right">
+    <div class="resume-title">Description</div>
+    <br>
+    <div class="resume-designation">During my final year of my studies, I was tasked with
+      working on a year long project/thesis. I decided to continue my work of traffic accident
+      hotspots from previous years and to do this I would expand on and fix issues with my
+      previous work. I read a lot more literature about hotspot analysis especially Australian
+      based and was able to learn a lot more and improve my methods. In previous years I had
+      used a planar KDE (Kernel Density Estimation) which isn’t ideal for car accidents, so this
+      time I was able to find a tool called SANET and was able to perform Network KDE (NKDE)
+      which improved my results.</div>
+      <br>
+    <div class="resume-designation">This is still an ongoing project and is yet to be fully
+      completed but bellow are some preliminary results that show, the combined peak-hours
+      (Morning peak hour 7-9am, and Evening peak hour 4-7pm) from the years 2008-2018. The
+      second video splits the two peak-hour periods up and again shows them from 2008-2018. My
+      aim is to also show results that focus in on specific intersections, like Flinders and
+      Swanston Street, and show the change over time. As mentioned, this project is far from
+      complete and hopefully in the future I or someone else can dive into the why’s of this
+      project and maybe even come up with solutions to mitigate crash accident hotspots.</div>
+      <br>
+  </div>
+</div>
+
+    <table class="t1">
+      <tr>
+        <td>
+          <video width="95%" controls>
+            <source src="vedios\combined.mp4" type="video/mp4">
+            </video>
+          </td>
+
+          <td>
+            <video width="95%" controls>
+              <source src="vedios\split.mp4" type="video/mp4">
+              </video>
+            </td>
+          </tr>
+        </table>
+        <table class="t2">
+          <tr>
+            <td>
+              <p class="ref">Video of the combined peak-hour crash hotspots from 2008-2018</p>
+            </td>
+
+            <td>
+              <p class="ref">Video of morning to evening peak-hour crash hotspots from 2008-2018</p>
+            </td>
+          </tr>
+        </table>
+
+
+
+
+
+
+
+
+        <!--              Footer               -->
+        <footer id="footer">
+          <div class="footer-container">
+            <div class="credits">
+              Designed by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Abhi,</a>
+              Edited by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Cameron</a>
+            </div>
+            <div class="copyright">
+              &copy; Copyright <strong><span style="color:white">MIT License</span></strong> All Rights Reserved
+            </div>
+          </div>
+        </footer>
+
+        <!-- Main javascript file -->
+        <script src="js/index.js"></script>
+
+      </body>
+      </html>

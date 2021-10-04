@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cameron Bateman Geoportfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"-->
+  <!--          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"-->
+  <!--          crossorigin="anonymous">-->
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<!-- =======================================================
+* Template Name: Resume for GIS portfolio
+* Template URL:
+* Author: https://github.com/Abhisaran
+* License:
+======================================================== -->
+
+<body id="body">
+  <!--<body>-->
+  <!-- Navigation Bar -->
+  <header>
+    <nav id="navbar" class="navbar" role="navigation" data-mobile="false">
+      <button id="navbar-toggle" class="navbar-toggle" type="button"
+      aria-controls="navbar-menu"
+      aria-label="Toggle menu"
+      aria-expanded="false">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul id="nav-link-container" class="nav-link-container">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<a href="#portfolio" id="nav-scroll-button">
+  <span> >>> </span>
+</a>
+
+<section id="home">
+  <div id="home-left">
+    <div id="hacker-name" class="name-big-font">Hi my name is Cameron Bateman,
+      a keen data and spatial analyst</div>
+    </div>
+    <div id="home-right">
+      <div id="home-right-bg"></div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="portfolio">
+      <div class="name-big-font">-- Portfolio --</div>
+      <div class="portfolio-filter-container">
+        <ul id="portfolio-filters">
+          <li>
+            <button data-filter-id="all" class="filter-button filter-button-active">All</button>
+          </li>
+          <li>
+            <button data-filter-id="personal" class="filter-button">Personal</button>
+          </li>
+          <li>
+            <button data-filter-id="professional" class="filter-button">Professional</button>
+          </li>
+        </ul>
+      </div>
+      <div class="portfolio-grid-container">
+        <div class="portfolio-grid-item" data-project-type="personal">
+          <a href="melbourne.html">
+            <img class="portfolio-image" src="images/project-images/MornMelb.png" alt="Melbourne Hotspot">
+          </a>
+        </div>
+        <div class="portfolio-grid-item" data-project-type="personal">
+          <a href="Qgis.html">
+            <img class="portfolio-image" src="images/project-images/Qgis.png" alt="Qgis Project">
+          </a>
+        </div>
+        <div class="portfolio-grid-item" data-project-type="professional">
+          <a href="Atlas.html">
+            <img class="portfolio-image" src="images/project-images/Atlas.png" alt="Atlas Calender">
+          </a>
+        </div>
+        <div class="portfolio-grid-item" data-project-type="personal">
+          <a href="yarrabend.html">
+            <img class="portfolio-image" src="images/project-images/YarraBend.jpg" alt="YarraBend">
+          </a>
+        </div>
+        <div class="portfolio-grid-item" data-project-type="professional">
+          <a href="major.html">
+            <img class="portfolio-image" src="images/project-images/Hotspot.png" alt="Current project">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="resume">
+      <div class="name-big-font">-- Resume --</div>
+      <div id="resume-container">
+
+        <!-- Below is an example of a company i have worked at, as of right now
+             i have not been able to work anywhere but once i have it can go here-->
+
+         <!-- <div class="resume-article">
+          <div class="resume-article-left">
+            <img class="resume-image" src="images/resume-images/4.png" alt="Company logo in resume">
+          </div>
+          <div class="resume-article-right">
+            <div class="resume-title">Microsoft</div>
+            <div class="resume-designation">Chairman and CEO, since February 2014</div>
+            <div class="resume-location">Melbourne</div>
+            <br>
+            <div class="resume-description">As chairman and CEO of Microsoft, I define my mission and
+              that of
+              my company as empowering every person and every organization on
+              the planet to achieve more.
+              <br>
+              <br>
+              <span class="resume-description-key">
+                Key responsibilities
+              </span>
+              <ul>
+                <li>Developing business plans, budgets and strategies
+                  for consideration by the board and, to the extent
+                  approved by the board, implementing these plans,
+                  budgets and strategies;
+                </li>
+                <li>Ensuring the organisation’s operations and business
+                  are within the parameters set by the board from time
+                  to time and that the board is kept informed of material
+                  developments in the organisation’s affairs, operations
+                  and business;
+                </li>
+                <li>Where proposed transactions, commitments or
+                  arrangements exceed threshold parameters set by
+                  the board, referring the matter to the board for its
+                  consideration and approval;
+                </li>
+              </ul>
+              <br>
+              <span class="resume-description-key">
+                Key achievements
+              </span>
+              <ul>
+                <li>Identifying and managing operational and corporate
+                  risks for the organisation and, where those risks could
+                  have a material impact on the organisation, formulating
+                  strategies for managing and mitigating those risks,
+                  including for consideration and endorsement
+                  (as applicable) by the board;
+                </li>
+                <li>Ensuring the organisation’s operations and business
+                  are within the parameters set by the board from time
+                  to time and that the board is kept informed of material
+                  developments in the organisation’s affairs, operations
+                  and business;
+                </li>
+                <li>Managing the organisation’s financial and other reporting
+                  mechanisms, and control and monitoring systems,
+                  to ensure that these mechanisms and systems capture
+                  all relevant material information on a timely basis,
+                  are functioning effectively and are founded on a sound
+                  basis of prudential risk management;
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="resume-article">
+          <div class="resume-article-left">
+            <img class="resume-image" src="images/resume-images/RMIT.png" alt="Uni logo in resume">
+          </div>
+          <div class="resume-article-right-main">
+            <div class="resume-title">Royal Melbourne Institute of Technology</div>
+            <div class="resume-designation">Bachelor of Science (Geospatial Science) (Honours),
+              from March 2018 - October 2021
+            </div>
+            <div class="resume-location">Australia, Melbourne</div>
+            <br>
+            <div class="resume-description">
+              RMIT's bachelor of Geospatial science is revered amongst all of Australia and
+              slowly and steadily the world. It has lots of connections within the industry
+              and helped me get a very solid grasp of spatial and data analysis. I
+              graduated with a WAM of 71 and a GPA of 3.0.
+              <br>
+              <br>
+              <span class="resume-description-key">
+                Specializations
+              </span>
+              <ul>
+                <li>The course offers a wide range of avenues from surveying
+                  to photogrammetry, to Remote sensing and more. My main
+                  focus and interest though was with GIS, (Geographic
+                  Information System) which focuses on spatial and data analysis
+                </li>
+
+                <li>In a general sense I have had great success in being able to
+                  find data, analyse what it means, cut it down to what I need
+                  and then use it for a variety of purposes, such as road and
+                  hotspot analysis, or map making.
+                </li>
+
+                <li>Through GIS I was very interested in road accidents and
+                  Victoria’s goal of <a href="https://www.tac.vic.gov.au/road-safety/victorian-road-safety-strategy/towards-zero-2016-2020-road-safety-strategy"
+                  target="_blank" style="text-decoration:none">
+                  <b>towards 0</b></a>. Through this interest I was able to analyse car
+                  crashes and hotspots through three major projects were I
+                  created and analysed road accident hotspots and their patterns.
+                </li>
+              </ul>
+              <br>
+              <span class="resume-description-key">
+                Key achievements
+              </span>
+              <ul>
+                <li>My main achievement would be my work. Being able to produce
+                  high quality analysis and then being able to produce a product
+                  that shows the analyse is something I'm very proud of. Being
+                  able to explain what I did and how I did it, is also a key
+                  achievement as well, as explaining something so someone who
+                  doesn't understand the project/work is something I'm always
+                  trying to improve on.
+                </li>
+                <li>I'm constantly trying to improve my social skills, and
+                  through the course I have been able to make strong progress on
+                  this. I have been able to meet new people and work within
+                  groups, writing joint reports or a group presentation. Being
+                  able to do this has strengthen my social and public skills and
+                  I hope to continue to do so wherever my career takes me.
+                </li>
+                <li>An achievement more focused on grades would be that I scored
+                  very well in my spatial analysis classes. I was able to
+                  achieve distinctions in all the courses with one High
+                  Distinction in the last course based on spatial analysis.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="name-big-font">-- Contact --</div>
+      <div id="social-container">
+        <div id="social-media-container">
+          <a href="https://www.facebook.com/profile.php?id=100008299369209" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/batos1999/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+          <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
+          <a href="https://github.com/CamBat19" target="_blank"><i class="fab fa-github-square"></i></a>
+          <!-- <a href=""><i class="fab fa-bitbucket"></i></a> -->
+          <!-- <a href=""><i class="fab fa-behance-square"></i></a> -->
+          <!-- <a href=""><i class="fab fa-pinterest-square"></i></a> -->
+          <a href="tel:0477452008" target="_blank"><i class="fas fa-phone-square"></i></a>
+          <!-- <a href=""><i class="fab fa-envelope-square"></i></a> -->
+        </div>
+      </div>
+      <div id="email-container">
+        <div id="contact-email-container">
+          <div>
+            <input id="email-input-from" type="email"
+            placeholder="To email address" value="cameronbateman3@gmail.com" required disabled/>
+            <input id="email-input-name" type="text"
+            placeholder="Please enter your name" required/>
+          </div>
+          <input id="email-input-subject" type="text"
+          placeholder="Subject?" required/>
+          <input id="email-input-body" type="text"
+          placeholder="Your response" required/>
+          <button id="email-input-button">Send</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="credits">
+        Designed by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Abhi,</a>
+        Edited by <a style="color:white" href="https://github.com/Abhisaran" target="_blank">Cameron</a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span style="color:white">MIT License</span></strong> All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main javascript file -->
+  <script src="js/index.js"></script>
+</body>
+</html>
